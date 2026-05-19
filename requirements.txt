@@ -5,3 +5,4 @@ xgboost
 imbalanced-learn
 pandas
 numpy
+gunicorn
