@@ -2,22 +2,21 @@ const API = 'http://localhost:5000';
 
 const advice = {
 low: [
-    'Pertahankan pola makan sehat dengan gizi seimbang.',
-    'Olahraga rutin minimal 150 menit per minggu.',
-    'Cek gula darah secara berkala setahun sekali.',
-    'Hindari konsumsi gula berlebihan dan makanan ultra-proses.'
+    'Pertahankan pola makan sehat dengan gizi seimbang',
+    'Olahraga rutin minimal 150 menit per minggu',
+    'Cek gula darah secara berkala setahun sekali',
+    'Hindari konsumsi gula berlebihan'
 ],
 medium: [
-    'Konsultasikan hasil ini dengan dokter atau tenaga medis.',
-    'Kurangi asupan karbohidrat sederhana dan gula tambahan.',
-    'Mulai olahraga terjadwal seperti jalan kaki, renang, atau bersepeda.',
-    'Pantau berat badan, tekanan darah, dan gula darah secara rutin.'
+    'Konsultasikan hasil ini dengan dokter atau tenaga medis',
+    'Kurangi asupan karbohidrat sederhana dan gula tambahan',
+    'Mulai olahraga terjadwal seperti jalan kaki, renang, atau bersepeda',
+    'Pantau berat badan, tekanan darah, dan gula darah secara rutin'
 ],
 high: [
-    'Segera periksakan diri ke dokter untuk tes HbA1c dan FPG.',
-    'Hindari minuman manis, makanan berlemak tinggi, dan alkohol.',
-    'Ikuti program manajemen berat badan jika BMI di atas normal.',
-    'Jangan tunda — penanganan dini sangat berpengaruh pada prognosis.'
+    'Hindari minuman manis, makanan berlemak tinggi, dan alkohol',
+    'Ikuti program manajemen berat badan jika BMI di atas normal',
+    'Jangan tunda — penanganan dini sangat berpengaruh pada prognosis'
 ]
 };
 

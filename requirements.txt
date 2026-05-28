@@ -1,8 +1,0 @@
-flask
-flask-cors
-scikit-learn
-xgboost
-imbalanced-learn
-pandas
-numpy
-gunicorn

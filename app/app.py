@@ -1,20 +1,17 @@
 
 
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
-import pickle
+import joblib
 import numpy as np
 import os
 import pandas as pd
 
-app = Flask(__name__, static_folder='.')
+app = Flask(__name__)
 CORS(app)
 
-MODEL_PATH = 'diabetes_model.pkl'
-
-model_package = None
-with open(MODEL_PATH, 'rb') as f:
-    model_package =  pickle.load(f)
+MODEL_PATH = 'diabetes_model.joblib'
+model_package =  joblib.load(MODEL_PATH)
 
 model = model_package['model']
 scaler = model_package['scaler']
@@ -24,21 +21,17 @@ threshold = model_package['threshold']
 features = model_package['feature_names']
 
 
-@app.route('/')
-def index():
-    return send_from_directory('.', 'index.html')
+@app.route('/') 
+def index(): 
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json()
-    if not data:
-        return jsonify({'error': 'No JSON data received'}), 400
 
     input_values = {}
     for feat in features:
         val = data.get(feat)
-        if val is None:
-            return jsonify({'error': f'Missing field: {feat}'}), 400
         input_values[feat] = float(val)
 
 

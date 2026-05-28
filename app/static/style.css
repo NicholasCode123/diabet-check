@@ -14,7 +14,7 @@ body {
   flex-direction: column;
 }
 
-/* HEADER */
+
 header {
   background: #2563eb;
   color: #fff;
@@ -31,7 +31,7 @@ header p {
   opacity: 0.85;
 }
 
-/* MAIN */
+
 main {
   flex: 1;
   max-width: 760px;
@@ -40,7 +40,7 @@ main {
   padding: 0 16px;
 }
 
-/* FORM SECTION */
+
 .form-section {
   background: #fff;
   border: 1px solid #dde1e7;
@@ -135,7 +135,7 @@ button#predictBtn:disabled {
   font-size: 0.85rem;
 }
 
-/* RESULT SECTION */
+
 .result-section {
   display: none;
   background: #fff;
@@ -197,7 +197,7 @@ button#predictBtn:disabled {
   transition: width 0.8s ease;
 }
 
-/* Color by risk */
+
 .result-section.low  .prob-fill { background: #16a34a; }
 .result-section.medium .prob-fill { background: #d97706; }
 .result-section.high .prob-fill { background: #dc2626; }
@@ -206,7 +206,7 @@ button#predictBtn:disabled {
 .result-section.medium .result-title { color: #d97706; }
 .result-section.high .result-title { color: #dc2626; }
 
-/* ADVICE */
+
 .advice-list {
   list-style: none;
   display: flex;
