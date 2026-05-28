@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000';
+const API = "https://nicho106.pythonanywhere.com";
 
 const advice = {
 low: [
