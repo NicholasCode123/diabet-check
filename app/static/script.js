@@ -1,5 +1,5 @@
-const API = "https://nicho106.pythonanywhere.com";
-
+// const API = "https://nicho106.pythonanywhere.com";
+const API = "http://localhost:5000";
 const advice = {
 low: [
     'Pertahankan pola makan sehat dengan gizi seimbang',
